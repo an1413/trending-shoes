@@ -16,7 +16,11 @@ button {
     background-color: inherit;
 }
 
-a:hover {
+a {
+    text-decoration: none;
+}
+
+a:focus {
     color: red;
 }
 
@@ -46,7 +50,7 @@ ul,li,ol {
 
 .shoes-nav {
     padding: 1.5em;
-    margin-bottom: 144px;
+    margin-bottom: 50px;
 }
 
 .shoes-sidebar {
@@ -76,7 +80,7 @@ ul,li,ol {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: vertical-rl;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 1.2em;
     line-height: 26px;
     letter-spacing: 1.25em;
     text-transform: uppercase;
@@ -90,7 +94,7 @@ ul,li,ol {
     display: flex;
     justify-content: center;
     gap: 120px;
-
+    z-index: -1;
 }
 
 .btn-list a {
@@ -170,3 +174,15 @@ ul,li,ol {
     display: block;
     width: 700px;
 }
+
+/* @media screen and (max-width:380px) {
+
+    .wrapper {
+        display: block;
+    }
+
+    .shoes-sidebar {
+        
+    }
+
+} */
