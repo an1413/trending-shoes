@@ -6,6 +6,8 @@
 ## 결과물
 ![image](https://user-images.githubusercontent.com/87430624/232541004-112421b7-db4a-443e-ac74-7e5db6f3ebad.png)
 
+- https://an1413.github.io/trending-shoes/
+
 ## 문제점
 - 웹사이트를 기준으로 먼저 만들었지만 웹사이트가 기준이 아닌 모바일을 기준으로 만들면 효과적이라고 생각했다.
 - 신발과 텍스트 문단의 자연스러운 마진을 어떻게 해야될지 고민이다.
