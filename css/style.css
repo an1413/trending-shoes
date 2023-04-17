@@ -1,5 +1,8 @@
-/* font */
+/* font and size */
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: "Barlow";
 }
 
@@ -13,25 +16,36 @@ button {
     background-color: inherit;
 }
 
+a:hover {
+    color: red;
+}
+
 ul,li,ol {
     list-style: none;
 }
 
 .container {
-    width: 1600px;
-    background-color: aliceblue;
+    background-color: #ddd;
+    width: 1440px;
     margin: 0 auto;
+    /* max-width: 1280px; */
+    /* margin: 0 auto; */
+}
+
+.wrapper {
     display: flex;
+    width: 100%;
     height: 100vh;
 }
 
 .shoes-main {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .shoes-nav {
+    padding: 1.5em;
     margin-bottom: 144px;
 }
 
@@ -39,6 +53,7 @@ ul,li,ol {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
     gap: 120px;
     width: 149px;
     background-color: #ADB5BD;
@@ -46,6 +61,7 @@ ul,li,ol {
 
 .shoes-main {
     background-color: #CF3737;
+    width: 100%;
 }
 
 
@@ -59,9 +75,14 @@ ul,li,ol {
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: vertical-rl;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 1.25em;
+    text-transform: uppercase;
 
+    color: #313131;
 }
-
 
 
 /* shoes-nav */
@@ -72,7 +93,7 @@ ul,li,ol {
 
 }
 
-.btn-list button {
+.btn-list a {
     padding: 10px;
     color: #FFFFFF;
 }
@@ -82,6 +103,70 @@ ul,li,ol {
 
 .shoes-contents {
     color: white;
-    padding: 40px;
+    padding: 0 40px;
+    display: flex;  
+    justify-content: center;
+    gap: 1em;
+    /* 컨텐츠랑 이미지 가로배치 */
+}
+
+.shoes-content {
     display: flex;
+    flex-direction: column;
+}
+
+.shoes-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 10rem;
+}
+
+.shoes-sub-title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 44px;
+    margin-bottom: 25px;
+}
+
+.shoes-price {
+    font-style: italic;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.shoes-content p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 203%;
+    /* or 32px */
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
+}
+
+.btn-cart {
+    width: 212px;
+    height: 55px;
+    background: #ADB5BD;
+    border-radius: 69px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 22px;
+    letter-spacing: 0.15em;
+
+    color: #000000;
+}
+
+
+.shoes-img {
+    flex-shrink: 1;
+    /* margin-top: -100px; */
+    margin-left: -100px;
+}
+
+.shoes-img img {
+    display: block;
+    width: 700px;
 }
