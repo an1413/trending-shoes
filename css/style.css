@@ -1,0 +1,26 @@
+body {
+    background-color: #ddd;
+}
+
+.container {
+    width: 1600px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+}
+
+.shoes-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.shoes-sidebar {
+    width: 149px;
+    background-color: #ADB5BD;
+}
+
+.shoes-main {
+    background-color: #CF3737;
+}
