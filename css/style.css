@@ -2,6 +2,16 @@ body {
     background-color: #ddd;
 }
 
+/* resets */
+button {
+    border: none;
+    background-color: inherit;
+}
+
+ul,li,ol {
+    list-style: none;
+}
+
 .container {
     width: 1600px;
     background-color: aliceblue;
@@ -17,10 +27,36 @@ body {
 }
 
 .shoes-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
     width: 149px;
     background-color: #ADB5BD;
 }
 
 .shoes-main {
     background-color: #CF3737;
+}
+
+
+/* shoes-sidebar */
+
+.shoes-sidebar img {
+    width: 60px;
+}
+
+.shoes-sidebar span {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+
+}
+
+
+
+/* shoes-nav */
+.btn-list {
+    
+    display: flex;
 }
