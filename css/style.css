@@ -1,3 +1,8 @@
+/* font */
+* {
+    font-family: "Barlow";
+}
+
 body {
     background-color: #ddd;
 }
@@ -24,6 +29,10 @@ ul,li,ol {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+}
+
+.shoes-nav {
+    margin-bottom: 144px;
 }
 
 .shoes-sidebar {
@@ -57,6 +66,22 @@ ul,li,ol {
 
 /* shoes-nav */
 .btn-list {
-    
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+
+}
+
+.btn-list button {
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+
+/* shoes-contents */
+
+.shoes-contents {
+    color: white;
+    padding: 40px;
     display: flex;
 }
